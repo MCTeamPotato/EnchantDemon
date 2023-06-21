@@ -1,0 +1,12 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="LGPL-v3"
+
+[[mods]]
+modId="enchantdemon"
+version="${file.jarVersion}"
+displayName="EnchantDemon"
+authors="Team Potato"
+description='''
+
+'''
