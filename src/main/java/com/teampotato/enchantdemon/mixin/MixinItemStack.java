@@ -16,6 +16,6 @@ public abstract class MixinItemStack {
 
     @Inject(method = "inventoryTick", at = @At("HEAD"))
     private void onTick(Level pLevel, Entity pEntity, int pInventorySlot, boolean pIsCurrentItem, CallbackInfo ci) {
-        if (pIsCurrentItem && !this.getEnchantmentTags().isEmpty()) this.getEnchantmentTags().clear();
+        if (!this.getEnchantmentTags().isEmpty()) this.getEnchantmentTags().clear();
     }
 }
